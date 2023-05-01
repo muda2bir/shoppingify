@@ -4,9 +4,9 @@
   "description": "",
   "main": "./dist/app.js",
   "scripts": {
-    "dev:build": "npx swc ./src -d dist -w",
+    "dev:build": "npx tsc --watch",
     "dev:start": "nodemon ./dist/app.js",
-    "build": "npx swc ./src -d dist",
+    "build": "npx tsc",
     "start": "node ./dist/app.js"
   },
   "keywords": [],
