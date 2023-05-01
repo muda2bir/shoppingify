@@ -10,6 +10,10 @@ import { router as UserRoutes } from "./routes/users";
 app.use(express.json({ limit: "50mb" }));
 app.use(express.urlencoded({ extended: true, limit: "50mb" }));
 
+app.get("/", (req, res) => {
+  res.send("<h1>Home Page!</h1>");
+});
+
 // Routers
 app.use("/api/v1/user", UserRoutes); // user routes
 
